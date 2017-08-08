@@ -6,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var htmlImport = require('gulp-html-import');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -98,11 +99,18 @@ gulp.task('browserSync', function() {
     })
 })
 
+gulp.task('import', function () {
+    gulp.src('./src/*.html')
+        .pipe(htmlImport('./src/components/'))
+        .pipe(gulp.dest('./')); 
+})
+
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js', 'import'], function() {
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
+    gulp.watch('src/**/*.html', ['import']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
