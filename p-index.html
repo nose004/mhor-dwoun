@@ -161,7 +161,7 @@
             -->
 
             <!-- Icon Cards -->
-            <!-- 
+            <!--
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-3">
                     <div class="card card-inverse card-primary o-hidden h-100">
@@ -234,16 +234,40 @@
             <div class="card mb-3">
                 <div class="card-header">
                     <i class="fa fa-file"></i>
-                    Reservation
+                    Pre-screeing and Reservation
                 </div>
                 <div class="card-block">
                   <form>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
+                      <label>Height</label>
+                      <input type='number' id='height' class='form-text text-muted' value = '160'></input>
+                    </div>
+                    <div class="form-group">
+                      <label>Blood Pressure</label>
+                      <input type='number' class='form-text text-mute' id='blood pressure' required></input>
+                    </div>
+                    <div class='form-group'>
+                      <label>Weight</label>
+                      <input type='number' class='form-text text-muted' id='weight' required></input>
+                    </div>
+                    <div class='form-group'>
+                      <label>Blood Type</label> <br>
+                      <input type='radio' id = 'Blood type' value='A'>A</input>
+                      <input type='radio' id = 'Blood type' value='B'>B</input>
+                      <input type='radio' id = 'Blood type' value='AB'>AB</input>
+                      <input type='radio' id = 'Blood type' value='O'>O</input>
+
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">preferred Email address(optional)</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
+                      <label>preferred Telephone Number</label>
+                      <input type='tel' id='tel' value='08' class='form-control' required />
+                    </div>
+                    <!--<div class="form-group">
                       <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
@@ -266,12 +290,12 @@
                         <option>4</option>
                         <option>5</option>
                       </select>
-                    </div>
+                    </div>-->
                     <div class="form-group">
-                      <label for="exampleTextarea">Example textarea</label>
-                      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                      <label for="additional information">Additional Information</label>
+                      <textarea class="form-control" id="additional information" rows="3"></textarea>
                     </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">
                       <label for="exampleInputFile">File input</label>
                       <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
                       <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
@@ -302,7 +326,7 @@
                         <input type="checkbox" class="form-check-input">
                         Check me out
                       </label>
-                    </div>
+                    </div>-->
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
                 </div>
@@ -312,7 +336,7 @@
             <div class="card mb-3">
                 <div class="card-header">
                     <i class="fa fa-area-chart"></i>
-                    Patiant Flow Estimition 
+                    Patiant Flow Estimition
                 </div>
                 <div class="card-block">
                     <canvas id="myAreaChart" width="100%" height="30"></canvas>
