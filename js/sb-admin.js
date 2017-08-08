@@ -1,3 +1,11 @@
+
+$(document).ready(function(){
+  var url = window.location;
+  var path = url.pathname.split('/');
+  var file_name = path.pop();
+  $('a[href="./'+file_name+'"]').parent('li').addClass('active');
+});
+
 (function($) {
     "use strict"; // Start of use strict
 
