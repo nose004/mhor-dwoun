@@ -181,39 +181,39 @@ body.fixed-nav {
       max-width: 300px; } }
 
 /* Simple Chat */
-#chat .mytext {
+.p-chat .mytext {
   border: 0;
   padding: 10px;
   background: whitesmoke; }
 
-#chat .text {
+.p-chat .text {
   width: 75%;
   display: flex;
   flex-direction: column; }
 
-#chat .text > p:first-of-type {
+.p-chat .text > p:first-of-type {
   width: 100%;
   margin-top: 0;
   margin-bottom: auto;
   line-height: 13px;
   font-size: 12px; }
 
-#chat .text > p:last-of-type {
+.p-chat .text > p:last-of-type {
   width: 100%;
   text-align: right;
   color: silver;
   margin-bottom: -7px;
   margin-top: auto; }
 
-#chat .text-l {
+.p-chat .text-l {
   float: left;
   padding-right: 10px; }
 
-#chat .text-r {
+.p-chat .text-r {
   float: right;
   padding-left: 10px; }
 
-#chat .avatar {
+.p-chat .avatar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,34 +221,34 @@ body.fixed-nav {
   float: left;
   padding-right: 10px; }
 
-#chat .macro {
+.p-chat .macro {
   margin-top: 5px;
   width: 85%;
   border-radius: 5px;
   padding: 5px;
   display: flex; }
 
-#chat .msj-rta {
+.p-chat .msj-rta {
   float: right;
   background: whitesmoke; }
 
-#chat .msj {
+.p-chat .msj {
   float: left;
   background: white; }
 
-#chat .frame {
+.p-chat .frame {
   background: #e0e0de;
   height: 450px;
   overflow: hidden;
   padding: 0; }
 
-#chat .frame > div:last-of-type {
+.p-chat .frame > div:last-of-type {
   position: absolute;
   bottom: 5px;
   width: 100%;
   display: flex; }
 
-#chat ul {
+.p-chat ul {
   width: 100%;
   list-style-type: none;
   padding: 18px;
@@ -257,7 +257,7 @@ body.fixed-nav {
   display: flex;
   flex-direction: column; }
 
-#chat .msj:before {
+.p-chat .msj:before {
   width: 0;
   height: 0;
   content: "";
@@ -268,7 +268,7 @@ body.fixed-nav {
   border-width: 0 13px 13px 0;
   border-color: transparent #ffffff transparent transparent; }
 
-#chat .msj-rta:after {
+.p-chat .msj-rta:after {
   width: 0;
   height: 0;
   content: "";
@@ -279,26 +279,26 @@ body.fixed-nav {
   border-width: 13px 13px 0 0;
   border-color: whitesmoke transparent transparent transparent; }
 
-#chat input:focus {
+.p-chat input:focus {
   outline: none; }
 
-#chat ::-webkit-input-placeholder {
+.p-chat ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #d4d4d4; }
 
-#chat ::-moz-placeholder {
+.p-chat ::-moz-placeholder {
   /* Firefox 19+ */
   color: #d4d4d4; }
 
-#chat :-ms-input-placeholder {
+.p-chat :-ms-input-placeholder {
   /* IE 10+ */
   color: #d4d4d4; }
 
-#chat :-moz-placeholder {
+.p-chat :-moz-placeholder {
   /* Firefox 18- */
   color: #d4d4d4; }
 
-.clearfix:after {
+.p-reservation .clearfix:after {
   content: ".";
   display: block;
   clear: both;
@@ -306,16 +306,16 @@ body.fixed-nav {
   line-height: 0;
   height: 0; }
 
-.clearfix {
+.p-reservation .clearfix {
   display: inline-block; }
 
-html[xmlns] .clearfix {
+.p-reservation html[xmlns] .clearfix {
   display: block; }
 
-* html .clearfix {
+.p-reservation * html .clearfix {
   height: 1%; }
 
-.noselect {
+.p-reservation .noselect {
   -webkit-user-select: none;
   /* Chrome/Safari */
   -moz-user-select: none;
@@ -323,7 +323,7 @@ html[xmlns] .clearfix {
   -ms-user-select: none;
   /* IE10+ */ }
 
-h4 {
+.p-reservation h4 {
   width: 75%;
   text-align: center;
   font-family: 'Droid Sans Mono';
@@ -334,7 +334,7 @@ h4 {
   padding: 1em;
   background: #b63642; }
 
-p {
+.p-reservation p {
   text-align: center;
   font-family: 'Droid Sans Mono';
   margin: 3em auto 1em auto;
@@ -343,32 +343,32 @@ p {
   border-bottom: 2px solid #414141;
   background: #f4f4f4; }
 
-.cal1 {
+.p-reservation .cal1 {
   margin: 30px auto;
   max-width: 600px;
   font-family: 'Droid Sans Mono';
   font-size: 14px; }
 
-.cal1 .clndr .clndr-controls {
+.p-reservation .cal1 .clndr .clndr-controls {
   display: inline-block;
   width: 100%;
   position: relative;
   margin-bottom: 10px; }
 
-.cal1 .clndr .clndr-controls .month {
+.p-reservation .cal1 .clndr .clndr-controls .month {
   float: left;
   width: 33%;
   text-align: center; }
 
-.cal1 .clndr .clndr-controls .clndr-control-button {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button {
   float: left;
   width: 33%; }
 
-.cal1 .clndr .clndr-controls .clndr-control-button.rightalign {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button.rightalign {
   text-align: right;
   width: 34%; }
 
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
   cursor: pointer;
   -webkit-user-select: none;
   /* Chrome/Safari */
@@ -377,17 +377,17 @@ p {
   -ms-user-select: none;
   /* IE10+ */ }
 
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover {
   background: #ddd; }
 
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive {
   opacity: 0.5; }
 
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
   background: none;
   cursor: default; }
 
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
   cursor: pointer;
   -webkit-user-select: none;
   /* Chrome/Safari */
@@ -396,111 +396,111 @@ p {
   -ms-user-select: none;
   /* IE10+ */ }
 
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
   background: #ddd; }
 
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive {
   opacity: 0.5; }
 
-.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive:hover {
+.p-reservation .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive:hover {
   background: none;
   cursor: default; }
 
-.cal1 .clndr .clndr-table {
+.p-reservation .cal1 .clndr .clndr-table {
   table-layout: fixed;
   width: 100%; }
 
-.cal1 .clndr .clndr-table .header-days {
+.p-reservation .cal1 .clndr .clndr-table .header-days {
   height: 30px;
   font-size: 10px;
   background: #0D70A6; }
 
-.cal1 .clndr .clndr-table .header-days .header-day {
+.p-reservation .cal1 .clndr .clndr-table .header-days .header-day {
   vertical-align: middle;
   text-align: center;
   border-left: 1px solid #000000;
   border-top: 1px solid #000000;
   color: #fff; }
 
-.cal1 .clndr .clndr-table .header-days .header-day:last-child {
+.p-reservation .cal1 .clndr .clndr-table .header-days .header-day:last-child {
   border-right: 1px solid #000000; }
 
-.cal1 .clndr .clndr-table tr {
+.p-reservation .cal1 .clndr .clndr-table tr {
   height: 85px; }
 
-.cal1 .clndr .clndr-table tr td {
+.p-reservation .cal1 .clndr .clndr-table tr td {
   vertical-align: top; }
 
-.cal1 .clndr .clndr-table tr .day {
+.p-reservation .cal1 .clndr .clndr-table tr .day {
   border-left: 1px solid #000000;
   border-top: 1px solid #000000;
   width: 100%;
   height: inherit; }
 
-.cal1 .clndr .clndr-table tr .day:hover {
+.p-reservation .cal1 .clndr .clndr-table tr .day:hover {
   background: #eee; }
 
-.cal1 .clndr .clndr-table tr .day.today {
+.p-reservation .cal1 .clndr .clndr-table tr .day.today {
   background: #9AD6E3; }
 
-.cal1 .clndr .clndr-table tr .day.today:hover {
+.p-reservation .cal1 .clndr .clndr-table tr .day.today:hover {
   background: #72c6d8; }
 
-.cal1 .clndr .clndr-table tr .day.today.event {
+.p-reservation .cal1 .clndr .clndr-table tr .day.today.event {
   background: #a7dbc1; }
 
-.cal1 .clndr .clndr-table tr .day.event {
+.p-reservation .cal1 .clndr .clndr-table tr .day.event {
   background: #B4E09F; }
 
-.cal1 .clndr .clndr-table tr .day.event:hover {
+.p-reservation .cal1 .clndr .clndr-table tr .day.event:hover {
   background: #96d478; }
 
-.cal1 .clndr .clndr-table tr .day.inactive {
+.p-reservation .cal1 .clndr .clndr-table tr .day.inactive {
   background: #ddd; }
 
-.cal1 .clndr .clndr-table tr .day:last-child {
+.p-reservation .cal1 .clndr .clndr-table tr .day:last-child {
   border-right: 1px solid #000000; }
 
-.cal1 .clndr .clndr-table tr .day .day-contents {
+.p-reservation .cal1 .clndr .clndr-table tr .day .day-contents {
   box-sizing: border-box;
   padding: 8px;
   font-size: 12px;
   text-align: right; }
 
-.cal1 .clndr .clndr-table tr .empty,
-.cal1 .clndr .clndr-table tr .adjacent-month {
+.p-reservation .cal1 .clndr .clndr-table tr .empty,
+.p-reservation .cal1 .clndr .clndr-table tr .adjacent-month {
   border-left: 1px solid #000000;
   border-top: 1px solid #000000;
   width: 100%;
   height: inherit;
   background: #eee; }
 
-.cal1 .clndr .clndr-table tr .empty:hover,
-.cal1 .clndr .clndr-table tr .adjacent-month:hover {
+.p-reservation .cal1 .clndr .clndr-table tr .empty:hover,
+.p-reservation .cal1 .clndr .clndr-table tr .adjacent-month:hover {
   background: #ddd; }
 
-.cal1 .clndr .clndr-table tr .empty:last-child,
-.cal1 .clndr .clndr-table tr .adjacent-month:last-child {
+.p-reservation .cal1 .clndr .clndr-table tr .empty:last-child,
+.p-reservation .cal1 .clndr .clndr-table tr .adjacent-month:last-child {
   border-right: 1px solid #000000; }
 
-.cal1 .clndr .clndr-table tr:last-child .day {
+.p-reservation .cal1 .clndr .clndr-table tr:last-child .day {
   border-bottom: 1px solid #000000; }
 
-.cal1 .clndr .clndr-table tr:last-child .empty {
+.p-reservation .cal1 .clndr .clndr-table tr:last-child .empty {
   border-bottom: 1px solid #000000; }
 
-.cal2 {
+.p-reservation .cal2 {
   max-width: 177px;
   margin: 0 auto;
   font-family: 'Droid Sans Mono'; }
 
-.cal2 .clndr .clndr-controls {
+.p-reservation .cal2 .clndr .clndr-controls {
   display: block;
   display: inline-block;
   width: 100%;
   margin-bottom: 3px; }
 
-.cal2 .clndr .clndr-controls .clndr-previous-button {
+.p-reservation .cal2 .clndr .clndr-controls .clndr-previous-button {
   float: left;
   width: 10%;
   text-align: left;
@@ -512,15 +512,15 @@ p {
   -ms-user-select: none;
   /* IE10+ */ }
 
-.cal2 .clndr .clndr-controls .clndr-previous-button:hover {
+.p-reservation .cal2 .clndr .clndr-controls .clndr-previous-button:hover {
   background-color: #f4f4f4; }
 
-.cal2 .clndr .clndr-controls .month {
+.p-reservation .cal2 .clndr .clndr-controls .month {
   float: left;
   width: 80%;
   text-align: center; }
 
-.cal2 .clndr .clndr-controls .clndr-next-button {
+.p-reservation .cal2 .clndr .clndr-controls .clndr-next-button {
   float: left;
   width: 10%;
   text-align: right;
@@ -532,42 +532,42 @@ p {
   -ms-user-select: none;
   /* IE10+ */ }
 
-.cal2 .clndr .clndr-controls .clndr-next-button:hover {
+.p-reservation .cal2 .clndr .clndr-controls .clndr-next-button:hover {
   background-color: #f4f4f4; }
 
-.cal2 .clndr .clndr-grid {
+.p-reservation .cal2 .clndr .clndr-grid {
   text-align: center;
   border: 1px solid #FF4545;
   display: inline-block; }
 
-.cal2 .clndr .clndr-grid .header-day {
+.p-reservation .cal2 .clndr .clndr-grid .header-day {
   float: left;
   width: 25px;
   height: 25px;
   background: #FF4545; }
 
-.cal2 .clndr .clndr-grid .day {
+.p-reservation .cal2 .clndr .clndr-grid .day {
   float: left;
   width: 25px;
   height: 25px; }
 
-.cal2 .clndr .clndr-grid .day.event {
+.p-reservation .cal2 .clndr .clndr-grid .day.event {
   background-color: #B4E09F; }
 
-.cal2 .clndr .clndr-grid .day.today {
+.p-reservation .cal2 .clndr .clndr-grid .day.today {
   background-color: #E3C57F; }
 
-.cal2 .clndr .clndr-grid .empty,
-.cal2 .clndr .clndr-grid .adjacent-month {
+.p-reservation .cal2 .clndr .clndr-grid .empty,
+.p-reservation .cal2 .clndr .clndr-grid .adjacent-month {
   float: left;
   width: 25px;
   height: 25px;
   background: #ddd; }
 
-.cal2 .clndr .clndr-today-button {
+.p-reservation .cal2 .clndr .clndr-today-button {
   width: 100%;
   text-align: center;
   cursor: pointer; }
 
-.cal2 .clndr .clndr-today-button:hover {
+.p-reservation .cal2 .clndr .clndr-today-button:hover {
   background-color: #ddd; }

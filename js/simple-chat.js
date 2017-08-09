@@ -16,7 +16,7 @@ function formatAMPM(date) {
 }
 
 //-- No use time. It is a javaScript effect.
-function insertChat(who, text, time = 0){
+function insertChat(who, text, time){
     var control = "";
     var date = formatAMPM(new Date());
 
@@ -43,14 +43,14 @@ function insertChat(who, text, time = 0){
     }
     setTimeout(
         function(){
-            $("ul").append(control);
+            $("ul", ".p-chat").append(control);
 
         }, time);
 
 }
 
 function resetChat(){
-    $("ul").empty();
+    $("ul", ".p-chat").empty();
 }
 
 $(".mytext").on("keyup", function(e){
@@ -67,7 +67,7 @@ $(".mytext").on("keyup", function(e){
 resetChat();
 
 //-- Print Messages
-insertChat("me", "Hello Doctor.", 1000);
+insertChat("me", "Hello Doctor.", 0);
 insertChat("you", "Hi, Patient!    How can I help you?", 2000);
 insertChat("me", "I have a headache.", 3000);
 insertChat("you", "How bad is it?", 4000);
