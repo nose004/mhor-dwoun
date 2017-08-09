@@ -2,7 +2,8 @@ var me = {};
 me.avatar = "https://lh6.googleusercontent.com/-lr2nyjhhjXw/AAAAAAAAAAI/AAAAAAAARmE/MdtfUmC0M4s/photo.jpg?sz=48";
 
 var you = {};
-you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg";
+// you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg";
+you.avatar = "http://www.fumira.jp/cut/medical/doctor/doctor1_2.gif";
 
 function formatAMPM(date) {
     var hours = date.getHours();
@@ -16,7 +17,7 @@ function formatAMPM(date) {
 }
 
 //-- No use time. It is a javaScript effect.
-function insertChat(who, text, time = 0){
+function insertChat(who, text, time){
     var control = "";
     var date = formatAMPM(new Date());
 
@@ -43,14 +44,14 @@ function insertChat(who, text, time = 0){
     }
     setTimeout(
         function(){
-            $("ul").append(control);
+            $("ul", ".p-chat").append(control);
 
         }, time);
 
 }
 
 function resetChat(){
-    $("ul").empty();
+    $("ul", ".p-chat").empty();
 }
 
 $(".mytext").on("keyup", function(e){
@@ -67,7 +68,7 @@ $(".mytext").on("keyup", function(e){
 resetChat();
 
 //-- Print Messages
-insertChat("me", "Hello Doctor.", 1000);
+insertChat("me", "Hello Doctor.", 0);
 insertChat("you", "Hi, Patient!    How can I help you?", 2000);
 insertChat("me", "I have a headache.", 3000);
 insertChat("you", "How bad is it?", 4000);
