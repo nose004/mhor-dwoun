@@ -1,71 +1,131 @@
 @import "h-header.html"
 <!-- put contents here -->
-<div class="row">
-    <div class="col-xl-3 col-sm-6 mb-3">
-        <div class="card card-inverse card-primary o-hidden h-100">
-            <div class="card-block">
-                <div class="card-block-icon">
-                    <i class="fa fa-fw fa-comments"></i>
+
+        <div class="container-fluid">
+
+            <!-- Area Chart Example -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    Chat List
                 </div>
-                <div class="mr-5">
-                    26 New Messages!
-                </div>
-            </div>
-            <a href="#" class="card-footer clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right"><i class="fa fa-angle-right"></i></span>
-            </a>
-        </div>
-    </div>
-    <div class="col-xl-3 col-sm-6 mb-3">
-        <div class="card card-inverse card-success o-hidden h-100">
-            <div class="card-block">
-                <div class="card-block-icon">
-                    <i class="fa fa-fw fa-list"></i>
-                </div>
-                <div class="mr-5">
-                    11 New Tasks!
-                </div>
-            </div>
-            <a href="#" class="card-footer clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right"><i class="fa fa-angle-right"></i></span>
-            </a>
-        </div>
-    </div>
-    <div class="col-xl-3 col-sm-6 mb-3">
-        <div class="card card-inverse card-warning o-hidden h-100">
-            <div class="card-block">
-                <div class="card-block-icon">
-                    <i class="fa fa-fw fa-address-card-o"></i>
-                </div>
-                <div class="mr-5">
-                    123 New Reservations!
-                </div>
-            </div>
-            <a href="#" class="card-footer clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right"><i class="fa fa-angle-right"></i></span>
-            </a>
-        </div>
-    </div>
-    <div class="col-xl-3 col-sm-6 mb-3">
-        <div class="card card-inverse card-danger o-hidden h-100">
-            <div class="card-block">
-                <div class="card-block-icon">
-                    <i class="fa fa-fw fa-cog"></i>
-                </div>
-                <div class="mr-5">
-                    13 New AI Suggestions!
-                </div>
-            </div>
-            <a href="#" class="card-footer clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right"><i class="fa fa-angle-right"></i></span>
-            </a>
-        </div>
-    </div>
-</div>
+                <div class="row">
+                   <div class="col-md-12">
+                       <div class="panel panel-primary">
+                           <div class="panel-heading">
+                           <div class="panel-body">
+                               <ul class="chat">
+                                   <li class="left clearfix"><span class="chat-img pull-left">
+                                       <img src="image/Ryo.jpg" alt="User Avatar" class="d-flex mr-3 rounded-circle" width='150' height='150'/>
+                                   </span>
+                                       <div class="chat-body clearfix">
+                                           <div class="header">
+                                               <strong class="primary-font">Ryosuke Onose</strong>
+                                               <span class="badge badge-pill badge-primary">3</span><small class="pull-right text-muted">
+                                                   <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                                           </div>
+                                           <p>
+                                               sent a photo  <i class="fa fa-file-image-o" aria-hidden="true"></i>
+
+                                           </p>
+                                       </div>
+                                   </li>
+                                   <li class="left clearfix"><span class="chat-img pull-left">
+                                       <img src="image/Na.jpg" alt="User Avatar" class="d-flex mr-3 rounded-circle" width='150' height='150'/>
+                                   </span>
+                                       <div class="chat-body clearfix">
+                                           <div class="header">
+                                               <strong class="primary-font">Sittipong Khongtanachalotom</strong>
+                                               <span class="badge badge-pill badge-primary">7</span><small class="pull-right text-muted">
+                                                   <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                                           </div>
+                                           <p>
+                                             My headache is really bad :(
+                                           </p>
+                                       </div>
+                                   </li>
+                                   <li onclick="location.href='h-chat.html';" class="left clearfix">
+                                        <span class="chat-img pull-left">
+                                       <img src="image/bone.jpg" alt="User Avatar" class="d-flex mr-3 rounded-circle" width='150' height='150' />
+                                   </span>
+                                       <div class="chat-body clearfix">
+                                           <div class="header">
+                                               <strong class="primary-font">Chanokthorn Uerpairojkit</strong>
+                                               <span class="badge badge-pill badge-primary">1</span> <small class="pull-right text-muted">
+                                                   <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                                           </div>
+                                           <p class='chatMessage'>
+                                            Hello Doctor.
+                                           </p>
+                                       </div>
+                                   </li>
+                                   <li class="left clearfix"><span class="chat-img pull-left">
+                                       <img src="image/Aon.jpg" alt="User Avatar" class="d-flex mr-3 rounded-circle" width='150' height='150'/>
+                                   </span>
+                                       <div class="chat-body clearfix">
+                                           <div class="header">
+                                               <strong class="primary-font">Satita Thiangtham</strong>
+                                               <span class="badge badge-pill badge-primary">5</span> <small class="pull-right text-muted">
+                                                   <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                                           </div>
+                                           <p>
+                                               do I need any presriptions?
+                                           </p>
+                                       </div>
+                                   </li>
+                                   <li class="left clearfix"><span class="chat-img pull-left">
+                                       <img src="image/TingFang.jpg" alt="User Avatar" class="d-flex mr-3 rounded-circle" width='150' height='150' />
+                                   </span>
+                                       <div class="chat-body clearfix">
+                                           <div class="header">
+                                               <strong class="primary-font">Tingfang Que</strong> <small class="pull-right text-muted">
+                                                   <span class="glyphicon glyphicon-time"></span>2 hours ago</small>
+                                           </div>
+                                           <p>
+                                               Thank you.
+                                           </p>
+                                       </div>
+                                   </li>
+
+                                   <li class="left clearfix"><span class="chat-img pull-left">
+                                      <img src="image/Gearng.jpg" alt="User Avatar" class="d-flex mr-3 rounded-circle" width='150' height='150'/>
+                                   </span>
+                                       <div class="chat-body clearfix">
+                                           <div class="header">
+                                               <strong class="primary-font">Amornpong Trakankulpan</strong>
+                                               <small class="pull-right text-muted">
+                                                   <span class="glyphicon glyphicon-time"></span>4 hours ago</small>
+                                           </div>
+                                           <p>
+                                               My throat still hurts and I don't know why.
+                                           </p>
+                                       </div>
+                                   </li>
+                                   <li class="left clearfix"><span class="chat-img pull-left">
+                                     <img src="image/Thipok.jpg" alt="User Avatar" class="d-flex mr-3 rounded-circle" width='150' height='150'/>
+                                   </span>
+                                       <div class="chat-body clearfix">
+                                           <div class="header">
+                                               <strong class="primary-font">Thipok Tham</strong> <small class="pull-right text-muted">
+                                                   <span class="glyphicon glyphicon-time"></span>4 hours ago</small>
+                                           </div>
+                                           <p>
+                                               I think coding makes my finger sore.
+                                           </p>
+                                       </div>
+                                   </li>
+                               </ul>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="card-footer small text-muted">
+                      Load more chat
+                   </div>
+               </div>
+             </div>
+           </div>
+         </div>
 <!-- / put contents here -->
 
 @import "h-footer.html"
