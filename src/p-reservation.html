@@ -1,44 +1,44 @@
 @import "p-header.html"
 
 <div class="p-reservation">
-    <div class="card mb-3">
-        <div class="card-header">
-            <i class="fa fa-file"></i>
-            Crowd Prediction
-        </div>
+  <div class="card mb-3">
+    <div class="card-header">
+      <i class="fa fa-file"></i>
+      Crowd Prediction
+    </div>
 
-        <div class="card-block">
-            <canvas id="chartForReservationPage" width="100%" height="60"></canvas>
-        </div>
-        <div class="card-footer small text-muted">
-            Updated yesterday at 11:59 PM
-        </div>
+    <div class="card-block">
+      <canvas id="chartForReservationPage" width="100%" height="60"></canvas>
+    </div>
+    <div class="card-footer small text-muted">
+      Updated yesterday at 11:59 PM
+    </div>
 
+  </div>
+
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <i class="fa fa-file"></i>
+      Reservation
+    </div>
+    <div class="container">
+      <div class="cal1">
+      </div>
     </div>
 
 
-    <div class="card mb-3">
-        <div class="card-header">
-            <i class="fa fa-file"></i>
-            Reservation
-        </div>
-        <div class="container">
-            <div class="cal1">
-            </div>
-        </div>
-
-
-        <script src="js/json2.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-        <script src= "js/moment-2.5.1.js"></script>
-
-        <script src="js/clndr.js"></script>
-        <script src="js/site.js"></script>
-    </div>
+  </div>
 </div>
 
 
 <!-- load reservation-chart.js -->
 <script type="text/javascript" src="js/reservation-chart.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src= "js/moment-2.5.1.js"></script>
+
+<script type="text/javascript" src="js/clndr.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
 
 @import "p-footer.html"
