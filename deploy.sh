@@ -1,4 +1,5 @@
 git checkout master
+git pull origin master
 gulp import
 git branch -f gh-pages
 git checkout gh-pages
