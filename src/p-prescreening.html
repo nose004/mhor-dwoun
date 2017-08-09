@@ -1,71 +1,49 @@
 @import "p-header.html"
 
-<!-- put your contents -->
-<div class="row">
-    <div class="col-xl-3 col-sm-6 mb-3">
-        <div class="card card-inverse card-primary o-hidden h-100">
+<div id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collapsible Group Item #1
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
             <div class="card-block">
-                <div class="card-block-icon">
-                    <i class="fa fa-fw fa-comments"></i>
-                </div>
-                <div class="mr-5">
-                    26 New Messages!
-                </div>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
-            <a href="#" class="card-footer clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right"><i class="fa fa-angle-right"></i></span>
-            </a>
         </div>
     </div>
-    <div class="col-xl-3 col-sm-6 mb-3">
-        <div class="card card-inverse card-success o-hidden h-100">
+    <div class="card">
+        <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                </a>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="card-block">
-                <div class="card-block-icon">
-                    <i class="fa fa-fw fa-list"></i>
-                </div>
-                <div class="mr-5">
-                    11 New Tasks!
-                </div>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
-            <a href="#" class="card-footer clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right"><i class="fa fa-angle-right"></i></span>
-            </a>
         </div>
     </div>
-    <div class="col-xl-3 col-sm-6 mb-3">
-        <div class="card card-inverse card-warning o-hidden h-100">
-            <div class="card-block">
-                <div class="card-block-icon">
-                    <i class="fa fa-fw fa-address-card-o"></i>
-                </div>
-                <div class="mr-5">
-                    123 New Reservations!
-                </div>
-            </div>
-            <a href="#" class="card-footer clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right"><i class="fa fa-angle-right"></i></span>
-            </a>
+    <div class="card">
+        <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                </a>
+            </h5>
         </div>
-    </div>
-    <div class="col-xl-3 col-sm-6 mb-3">
-        <div class="card card-inverse card-danger o-hidden h-100">
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="card-block">
-                <div class="card-block-icon">
-                    <i class="fa fa-fw fa-cog"></i>
-                </div>
-                <div class="mr-5">
-                    13 New AI Suggestions!
-                </div>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
-            <a href="#" class="card-footer clearfix small z-1">
-                <span class="float-left">View Details</span>
-                <span class="float-right"><i class="fa fa-angle-right"></i></span>
-            </a>
         </div>
     </div>
 </div>
-<!-- / put your contents -->
+
 @import "p-footer.html"
