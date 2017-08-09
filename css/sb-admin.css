@@ -349,6 +349,23 @@ body.fixed-nav {
   font-family: 'Droid Sans Mono';
   font-size: 14px; }
 
+.p-reservation .cal1 .clndr .calendar-day-content {
+  text-align: center;
+  margin-top: -16pt;
+  font-size: 32pt; }
+
+.p-reservation .cal1 .clndr .calendar-day-content .maru {
+  color: green; }
+
+.p-reservation .cal1 .clndr .calendar-day-content .batsu {
+  margin-top: 2pt;
+  color: red; }
+
+.p-reservation .cal1 .clndr .calendar-day-content .sankaku {
+  margin-top: 12pt;
+  font-size: 20pt;
+  color: darkgoldenrod; }
+
 .p-reservation .cal1 .clndr .clndr-controls {
   display: inline-block;
   width: 100%;

@@ -55,6 +55,28 @@
     font-family: 'Droid Sans Mono';
     font-size: 14px;
   }
+
+  .cal1 .clndr .calendar-day-content {
+    text-align: center;
+    margin-top: -16pt;
+    font-size: 32pt;
+  }
+
+  .cal1 .clndr .calendar-day-content .maru {
+    color: green;
+  }
+
+  .cal1 .clndr .calendar-day-content .batsu {
+    margin-top: 2pt;
+    color: red;
+  }
+
+  .cal1 .clndr .calendar-day-content .sankaku {
+    margin-top: 12pt;
+    font-size: 20pt;
+    color: darkgoldenrod;
+  }
+
   .cal1 .clndr .clndr-controls {
     display: inline-block;
     width: 100%;
