@@ -1,5 +1,6 @@
 var me = {};
-me.avatar = "https://lh6.googleusercontent.com/-lr2nyjhhjXw/AAAAAAAAAAI/AAAAAAAARmE/MdtfUmC0M4s/photo.jpg?sz=48";
+// me.avatar = "https://lh6.googleusercontent.com/-lr2nyjhhjXw/AAAAAAAAAAI/AAAAAAAARmE/MdtfUmC0M4s/photo.jpg?sz=48";
+me.avatar = "images/bone.jpg";
 
 var you = {};
 // you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48_5C5.jpg";
@@ -74,7 +75,6 @@ insertChat("me", "I have a headache.", 3000);
 insertChat("you", "How bad is it?", 4000);
 insertChat("me", "I can't breathe.", 5000);
 insertChat("you", "Oh, it's too late.", 6000);
-insertChat("you", "I'm calling an ambulance.", 7500);
 
 
 //-- NOTE: No use time on insertChat.
